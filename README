@@ -1,0 +1,33 @@
+NAME: Cao Xu
+EMAIL: cxcharlie@gmail.com
+ID: 704551688
+
+CONTENTS:
+
+lab1b-client.c: The C source file for the client. It opens a connection to the server using a socket,
+and sends information from the keyboard to the socket. It simultaneously receives the processed information
+back from the server, and displays it on the screen via STDOUT.
+
+lab1b-server.c: The C source file for the server. It opens a passive connection and waits to receive information
+from the client. Once it does, it converts it using a two-pipe shell similar to lab1a.c from the last lab, before
+sending it back to the client.
+
+README: This file which is basically a typical readme file lol
+
+Makefile: The makefile for this lab. It contains the default make (along with clean and dist which work as expected),
+and also contains two options to make just the client and the server ("client" and "server" respectively).
+
+
+RESEARCH:
+
+Discovery of sprint()
+https://stackoverflow.com/questions/56432674/c-programming-write-integers-to-a-text-file
+
+Most of my research was trying to figure out how to use zlib:
+https://stackoverflow.com/questions/42893519/zlib-deflateinit-always-returns-z-stream-error
+https://www.zlib.net/manual.html
+https://zlib.net/zlib_how.html
+https://stackoverflow.com/questions/7706241/what-is-new-bytefint-in-c#:~:text=Additionally%2C%20as%20Default%20pointed%20out,FAR%20simply%20creates%20that%20symbol.
+https://stackoverflow.com/questions/22337896/how-to-fix-undefined-references-to-inflate-deflate-functions
+
+I also used the TA slides a fair amount
